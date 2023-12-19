@@ -69,8 +69,10 @@ class FlashList<T> extends React.PureComponent<
   private rlvRef?: RecyclerListView<RecyclerListViewProps, any>;
   private stickyContentContainerRef?: PureComponentWrapper;
   private listFixedDimensionSize = 0;
-  private transformStyle = { transform: [{ scaleY: -1 }] };
-  private transformStyleHorizontal = { transform: [{ scaleX: -1 }] };
+  private transformStyle = PlatformConfig.invertedTransformStyle;
+  private transformStyleHorizontal =
+    PlatformConfig.invertedTransformStyleHorizontal;
+
   private distanceFromWindow = 0;
   private contentStyle: ContentStyleExplicit = {
     paddingBottom: 0,

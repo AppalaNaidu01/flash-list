@@ -7,10 +7,22 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+- Update types to match `react-native@0.72` view types.
+  - https://github.com/Shopify/flash-list/pull/890
+
+## [1.5.0] - 2023-07-12
+
+- Update kotlin version to 1.8.10 for RN 0.72 compatibility
+  - https://github.com/Shopify/flash-list/pull/865
+
+## [1.4.3] - 2023-04-24
+
 - Fix definition conflicts with previous value
   - https://github.com/Shopify/flash-list/pull/795
-- Add support for `experimentalMaintainTopContentPosition`
-  - https://github.com/Shopify/flash-list/issues/547
+- Fix Android unit test
+  - https://github.com/Shopify/flash-list/pull/815
+- Fix performance issues with inverted lists on Android
+  - https://github.com/Shopify/flash-list/pull/819
 
 ## [1.4.2] - 2023-03-20
 
